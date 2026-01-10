@@ -9,3 +9,5 @@ Source of truth:
 - DEPLOYMENT.md
 
 All contributors and AI agents must follow these documents.
+
+AI agents must follow PROMPTS.md before working on this repository.
