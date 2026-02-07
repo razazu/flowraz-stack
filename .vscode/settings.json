@@ -1,0 +1,135 @@
+{
+  // ====================
+  // EDITOR CONFIGURATION
+  // ====================
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": null,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.smoothScrolling": true,
+
+  // ====================
+  // FILES & EXPLORER
+  // ====================
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.wrangler": true,
+    "**/*.log": true,
+    "**/coverage": true,
+    "**/.turbo": true
+  },
+  "files.associations": {
+    "*.sql": "sql",
+    "*.toml": "toml",
+    "wrangler.toml": "toml"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmUndo": "default",
+  "explorer.compactFolders": false,
+  "explorer.sortOrder": "type",
+
+  // ====================
+  // TYPESCRIPT & JAVASCRIPT
+  // ====================
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+
+  // ====================
+  // ESLINT & PRETTIER
+  // ====================
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.run": "onType",
+  "eslint.experimental.useFlatConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+  "prettier.printWidth": 100,
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "lf",
+  "prettier.bracketSpacing": true,
+
+  // ====================
+  // TAILWIND CSS
+  // ====================
+  "tailwindCSS.includeLanguages": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact",
+    "html"
+  ],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.colorDecorators": true,
+  "tailwindCSS.validate": true,
+  "tailwindCSS.hovers": true,
+  "tailwindCSS.suggestions": true,
+  "tailwindCSS.codeActions": true,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    ".*Styles*"
+  ],
+
+  // ====================
+  // SEARCH
+  // ====================
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.wrangler": true,
+    "**/coverage": true,
+    "**/*.log": true
+  },
+
+  // ====================
+  // EMmet
+  // ====================
+  "emmet.includeLanguages": {
+    "typescript": "typescriptreact",
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "typescriptreact": "jsx",
+    "javascriptreact": "jsx"
+  }
+}

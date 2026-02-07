@@ -1,0 +1,34 @@
+{
+  "recommendations": [
+    // ====================
+    // DATABASE & BACKEND
+    // ====================
+    "supabase.supabase",
+    "ckolkman.vscode-postgres",
+    "cloudflare.cloudflare-workers",
+    "stripe.stripe-vscode",
+    
+    // ====================
+    // CODE QUALITY
+    // ====================
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "pmneo.tsimporter",
+    "tamasfe.even-better-toml",
+    
+    // ====================
+    // FRONTEND
+    // ====================
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    
+    // ====================
+    // PRODUCTIVITY
+    // ====================
+    "humao.rest-client",
+    "eamodio.gitlens",
+    "christian-kohler.path-intellisense"
+  ],
+  "unwantedRecommendations": []
+}
