@@ -3,7 +3,7 @@
 ## Core Infrastructure
 - Cloudflare Workers (TypeScript)
 - Wrangler CLI
-- Cloudflare D1 (SQLite) with Drizzle ORM
+- Cloudflare D1 (SQLite) / Supabase (PostgreSQL) with Drizzle ORM
 - Cloudflare KV
 - Cloudflare R2
 
@@ -29,8 +29,8 @@
 - GitHub as source of truth
 
 ## Dev Tools
-- Cursor IDE
-- GitHub Copilot / Codex
+- Windsurf IDE (with Cascade AI)
+- Extensions: Supabase, Cloudflare Workers, TypeScript, Stripe, Drizzle
 - GitHub for version control
 - Cloudflare for infra
 - Vercel for frontend hosting

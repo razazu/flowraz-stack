@@ -20,9 +20,9 @@ Source of truth:
 
 ## SaaS Stack (למוצרים עם משתמשים ותשלומים)
 - Cloudflare Workers (Backend API)
-- D1 Database (SQLite) + KV + R2 Storage
+- D1 Database (SQLite) + Drizzle ORM / Supabase (PostgreSQL) + Drizzle ORM
+- KV + R2 Storage
 - Stripe Payments
-- Drizzle ORM
 - React + Vite (Dashboard)
 - Multi-tenant architecture
 - Example: flowraz-chatbot
@@ -55,11 +55,11 @@ Source of truth:
 | רכיב | טכנולוגיה | תיאור |
 |------|-----------|-------|
 | **Backend** | Cloudflare Workers | Serverless API |
-| **Database** | D1 (SQLite) | Relational database |
-| **Cache** | KV Namespace | Sessions, rate limits |
-| **Storage** | R2 | Files, documents |
+| **Database** | D1 (SQLite) / Supabase (PostgreSQL) | Relational database |
+| **ORM** | Drizzle ORM | Type-safe SQL + Migrations |
+| **Cache/Storage** | KV + R2 | Sessions, files |
+| **Alternative DB** | Supabase | PostgreSQL + Auth + Realtime |
 | **Payments** | Stripe | Subscriptions, billing |
-| **ORM** | Drizzle | Type-safe SQL |
 | **Frontend** | React + Vite | Dashboard SPA |
 | **Auth** | JWT + API Keys | Authentication |
 
@@ -85,6 +85,62 @@ saas-project/
 
 ### פרויקט לדוגמה
 - **FlowRaz Chatbot**: `c:\dev\flowraz-chatbot`
+
+---
+
+## Database Options
+
+### Cloudflare D1 (SQLite)
+**מתי להשתמש?**
+- פרויקטים קטנים-בינוניים
+- חיסכון בעלויות (free tier נדיב)
+- Edge-first architecture
+
+**יתרונות:**
+- Zero cold starts
+- SQLite semantics פשוטים
+- משולב מושלם ב-Workers
+
+### Supabase (PostgreSQL)
+**מתי להשתמש?**
+- פרויקטים גדולים עם צרכים מורכבים
+- צורך ב-Auth מובנה
+- Realtime subscriptions
+- Row Level Security (RLS)
+
+**יתרונות:**
+- PostgreSQL מלא
+- Auth + Storage + Realtime בחבילה אחת
+- SDK מעולה לכל השפות
+
+### ORM: Drizzle (חובה בשני המקרים!)
+- Type-safe SQL
+- Migrations אוטומטיות
+- Studio GUI לניהול DB
+- קלי משקל ל-Edge
+
+---
+
+## Windsurf IDE Setup
+
+### Recommended Extensions
+
+| קטגוריה | Extension | מזהה |
+|---------|-----------|------|
+| **Database** | Supabase | `supabase.supabase` |
+| **Database** | PostgreSQL | `ckolkman.vscode-postgres` |
+| **Backend** | Cloudflare Workers | `cloudflare.cloudflare-workers` |
+| **Payments** | Stripe | `stripe.stripe-vscode` |
+| **Code Quality** | ESLint | `dbaeumer.vscode-eslint` |
+| **Code Quality** | Prettier | `esbenp.prettier-vscode` |
+| **Productivity** | TypeScript Importer | `pmneo.tsimporter` |
+| **Config** | Better TOML | `tamasfe.even-better-toml` |
+| **Frontend** | Tailwind CSS IntelliSense | `bradlc.vscode-tailwindcss` |
+
+### Installation
+```
+Ctrl+Shift+P → Extensions: Install Extensions
+```
 
 ---
 
